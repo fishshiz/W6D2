@@ -1,0 +1,46 @@
+/* PHASE 9: Forms */
+.form-fieldset {
+  float: right;
+  margin: 0 0 0 20px;
+  padding: 19px;
+  width: 500px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button{
+  margin: 20px 0 0 0;
+  background: rgb(75, 180, 25);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #070;
+}
+
+.title{
+  display: block;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(100% - 21px);
+}
+
+.body{
+  display: block;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(100% - 21px);
+}
+
+.body > textarea{
+  height: 300px;
+}
+
+.cancel:hover{
+  color: red;
+  cursor: pointer;
+}
