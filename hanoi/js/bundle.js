@@ -161,6 +161,7 @@ class View{
     this.el = el;
 
     this.setupTowers();
+    this.render();
 
   }
 
@@ -170,12 +171,17 @@ class View{
       let ul = "<ul>";
       for(var i = tower.length-1; i>=0; i--){
         let el = tower[i];
-        ul += `<li>${el}</li>`;
+        ul += `<li size="${el}">${el}</li>`;
       }
       ul += "</ul>";
       console.log(ul);
       this.el.append(ul);
     });
+  }
+
+  render() {
+    this.el.empty();
+    this.setupTowers();
   }
 }
 
